@@ -1,11 +1,14 @@
-const db = require("./db.js")
+const db = require("../routers/db.js")
 
 const Schema = db.Schema 
 
 const petShema = new Schema({
     nome: {
         type: String,
-        required: true 
+        required: true,
+    },
+    raca: {
+        type: String
     }
 })
 
